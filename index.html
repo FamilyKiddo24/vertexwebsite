@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vertex - Home</title>
+        <style>
+            /* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #36393f; /* Dark grey similar to Discord */
+  margin: 0;
+padding: 0;
+  color: #ffffff; /* White */
+}
+
+/* Container for the whole Discord-like interface */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+  background-color: #36393f;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #202225; /* Darker grey similar to Discord */
+  width: 250px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #dcddde; /* Light grey similar to Discord */
+}
+
+/* Main content styles */
+.main-content {
+  background-color: #2f3136; /* Slightly lighter grey similar to Discord */
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #36393f;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+        .top-bar {
+            background-color: #923939;
+            color: #ffffff;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar-logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .top-bar-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .top-bar-links li {
+            margin-left: 20px;
+        }
+        .top-bar-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .top-bar-divider {
+            margin: 0 20px;
+            height: 20px;
+            width: 1px;
+            background-color: #ffffff;
+        }
+        .top-bar-button {
+            background-color: #ff0909;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remove default button underline */
+        }
+        .top-bar-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .main-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .bot-description {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .feature {
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .show-feature {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .feature-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .feature-description {
+            font-size: 18px;
+        }
+        .stats {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stats-item {
+            margin: 0 20px;
+            font-size: 24px;
+        }
+        .button-container {
+            margin-top: 60px;
+        }
+        .transition-button {
+            background-color: rgb(255, 0, 0);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        .transition-button:hover {
+            background-color: #677bc4;
+        }
+        .explore-more-text {
+            font-size: 24px;
+            margin-top: 40px;
+        }
+        .bot-description {
+            font-size: 24px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .terms {
+            font-size: 14px;
+            margin-top: 20px;
+            display: block;
+        }
+        </style>
+    </head>
+    <body>
+      <div class="top-bar">
+        <div class="top-bar-logo">
+            Vertex
+        </div>
+        <div class="top-bar-links">
+            <a href="./index.html">Home</a>
+            <div class="top-bar-divider"></div>
+            <a href="./commands.html">Commands</a>
+            <div class="top-bar-divider"></div>
+            <a href="./about.html">About</a>
+            <div class="top-bar-divider"></div>
+            <a href="#">GitHub</a>
+        </div>
+        <a href="https://discord.com/oauth2/authorize?client_id=1226337186543308852&permissions=8&scope=applications.commands+bot" class="top-bar-button">Get Vertex</a>
+    </div>
+    <div class="main-content">
+      <div class="bot-description">
+          Welcome to Vertex! This bot is one of the best all around bots. Vertex has features from Welcoming Users To Creating Giveaways.
+      </div>
+
+      <!-- Added a space below the bot description -->
+      <div style="margin-bottom: 20px;"></div>
+
+      <div class="feature">
+          <div class="feature-title">Feature 1</div>
+          <div class="feature-description">Giveaways! Vertex has a giveaway system for all server types!</div>
+      </div>
+      <div class="feature">
+          <div class="feature-title">Feature 2</div>
+          <div class="feature-description">Ticketing System! Vertex has one of the best ticketing systems!</div>
+      </div>
+      <div class="feature">
+          <div class="feature-title">Feature 3</div>
+          <div class="feature-description">AutoMod! Vertex has a great automod. You no longer need to moderate your channels!</div>
+      </div>
+      <div class="stats">
+          <div class="stats-item">Commands: 40+</div>
+          <div class="stats-item">User Happiness: 100%</div>
+      </div>
+      <div class="explore-more-text">Ready to add Vertex?</div>
+        <div class="button-container">
+            <a href="https://discord.com/oauth2/authorize?client_id=1226337186543308852&permissions=8&scope=applications.commands+bot" class="transition-button">Add Vertex Now</a>
+        </div>
+        <a class="terms">By clicking Add Vertex, you agree to our <a href="./termsofuse.html">Terms of Use</a> and <a href="./privacy-policy.html">Privacy Policy</a>.</a>
+  </div>
+
+  <script>
+      // JavaScript to add transition effects when scrolling to features
+      document.addEventListener('DOMContentLoaded', function() {
+          const features = document.querySelectorAll('.feature');
+          const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add('show-feature');
+                  }
+              });
+          });
+          features.forEach(feature => {
+              observer.observe(feature);
+          });
+      });
+  </script>
+  </div>     
+  </body>
+</html>

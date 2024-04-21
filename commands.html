@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vertex - Commands</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top-bar {
+            background-color: #923939;
+            color: #ffffff;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar-logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .top-bar-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .top-bar-links li {
+            margin-left: 20px;
+        }
+        .top-bar-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .top-bar-divider {
+            margin: 0 20px;
+            height: 20px;
+            width: 1px;
+            background-color: #ffffff;
+        }
+        .top-bar-button {
+            background-color: #ff0909;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remove default button underline */
+        }
+        .top-bar-button:hover {
+            background-color: #e0e0e0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #36393f; /* Dark grey similar to Discord */
+            margin: 0;
+            padding: 0;
+            color: #ffffff; /* White */
+        }
+        .main-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .command {
+            margin-bottom: 10px;
+        }
+        .command-name {
+            font-weight: bold;
+        }
+        .command-description {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="top-bar-logo">
+                Vertex
+            </div>
+            <div class="top-bar-links">
+                <a href="./index.html">Home</a>
+                <div class="top-bar-divider"></div>
+                <a href="./commands.html">Commands</a>
+                <div class="top-bar-divider"></div>
+                <a href="./about.html">About</a>
+                <div class="top-bar-divider"></div>
+                <a href="#">GitHub</a>
+            </div>
+            <a href="https://discord.com/oauth2/authorize?client_id=1226337186543308852&permissions=8&scope=applications.commands+bot" class="top-bar-button">Get Vertex</a>
+        </div>
+        <div class="main-content">
+            <div class="command">
+                <div class="command-name">/addvertex</div>
+                <div class="command-description">Creates A Invite Link To Add Vertex To Your Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/ban [user]</div>
+                <div class="command-description">Bans a User From The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/clear [user] [count]</div>
+                <div class="command-description">Clear a Number Of Messages Of a User in That Channel</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/createrole [name] [color]</div>
+                <div class="command-description">Create A Role In The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/createtextchannel [name]</div>
+                <div class="command-description">Make A Text Channel In The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/createvoice [name]</div>
+                <div class="command-description">Make A Voice Channel In The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/removeserverrole [role]</div>
+                <div class="command-description">Remove A Role From The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/setwelcomechannelhelp</div>
+                <div class="command-description">Brings Up The Help Menu For The /setwelcomechannel</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/togglefilter</div>
+                <div class="command-description">Toggle The Swear filter in the server (Auto Mod)</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/calculate [expression]</div>
+                <div class="command-description">Calculate Any Expression</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/flip-coin</div>
+                <div class="command-description">Flips A Coin</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/help</div>
+                <div class="command-description">Brings Up The Help Menu/div>
+            </div>
+            <div class="command">
+                <div class="command-name">/dice</div>
+                <div class="command-description">Rolls A 6 Face Dice</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/start-giveaway [channel] [duration] [winners] [prize]</div>
+                <div class="command-description">Start A Giveaway</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/end-giveaway [giveaway id/prize]</div>
+                <div class="command-description">End A Giveaway</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/reroll-giveaway [giveaway id/prize]</div>
+                <div class="command-description">Reroll A Giveaway That Ended</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/pause-giveaway [giveaway id/prize]</div>
+                <div class="command-description">Pause A Giveaway</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/resume-giveaway [giveaway id/prize]</div>
+                <div class="command-description">Resumes A Paused Giveaway</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/joke</div>
+                <div class="command-description">Says A Random Joke</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/kick [user]</div>
+                <div class="command-description">Kick a User</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/mute [user] [duration]</div>
+                <div class="command-description">Mute A User For A Certain Amount Of Time</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/roles</div>
+                <div class="command-description">Diplays All Of The Roles In The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/ping</div>
+                <div class="command-description">Pings Vertex To Check If It's Online</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/ticket setup [category]</div>
+                <div class="command-description">Change The Category The Tickets Get Created</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/ticket send</div>
+                <div class="command-description">Changes The Name Of The Button To Create Tickets And Sends The Message</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/ticket remove</div>
+                <div class="command-description">Remove The Ticket Feature From The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/unban [user]</div>
+                <div class="command-description">Unban A Banned User</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/unmute [user]</div>
+                <div class="command-description">Unmute A Muted User</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/warn [user]</div>
+                <div class="command-description">Warn A User</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/setwelcomechannel [channel]</div>
+                <div class="command-description">Set The Welcome User Message Channel</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/invitelink [channel] [max-age] [max-uses] [reason]</div>
+                <div class="command-description">Create A Server Invite Link (leave max-age and max-uses blank for a invite that never expires)</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/meme</div>
+                <div class="command-description">Generate A Random Meme</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/poll [option1] [option2] [option3+]</div>
+                <div class="command-description">Create A Poll (Max 10 Options)</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/rps [choice]</div>
+                <div class="command-description">Play Rock Paper Scissors with Vertex</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/say [message]</div>
+                <div class="command-description">Makes Vertex Say Any Message</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/serverinfo</div>
+                <div class="command-description">Shows Info For The Server</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/time [timezone]</div>
+                <div class="command-description">Display The Time For Each Timezone</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/userinfo [user]</div>
+                <div class="command-description">Show Info About A User</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/virus-check [url]</div>
+                <div class="command-description">Checks A Url To See If It Has A Virus</div>
+            </div>
+            <div class="command">
+                <div class="command-name">/weather [location]</div>
+                <div class="command-description">Shows The Weather In an Area</div>
+            </div>
+        </div>
+    </body>
+</html>
